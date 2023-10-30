@@ -28,7 +28,7 @@ CREATE TABLE `customer` (
   `email` varchar(255) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`customerid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES (1,'Ernesto','ernesto@email.com','123-456-7890'),(2,'Abdul','abdul@email.com','111-111-1111'),(3,'Ryan Gosling','ryangosling@email.com','222-222-2222'),(4,'Margot Robbie','margotrobbie@email.com','333-333-333'),(5,'bob','bob@email.com','444-444-4444');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:10

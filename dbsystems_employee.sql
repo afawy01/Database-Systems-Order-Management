@@ -28,7 +28,7 @@ CREATE TABLE `employee` (
   `employeeRank` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`employeeID`),
   UNIQUE KEY `employeeID_UNIQUE` (`employeeID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
+INSERT INTO `employee` VALUES (1,'Virgil van Dijk','Manager'),(2,'Darwin Nunez','Sales'),(3,'Alisson Becker','Technical Support'),(4,'Moe Salah','HR'),(5,'Joe Gomez','Floor Supervisor');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:10

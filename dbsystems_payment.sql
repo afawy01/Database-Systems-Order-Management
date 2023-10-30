@@ -30,7 +30,7 @@ CREATE TABLE `payment` (
   PRIMARY KEY (`paymentID`),
   KEY `OrderID_idx` (`orderID`),
   CONSTRAINT `payOrdersID` FOREIGN KEY (`orderID`) REFERENCES `orders` (`orderID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `payment` (
 
 LOCK TABLES `payment` WRITE;
 /*!40000 ALTER TABLE `payment` DISABLE KEYS */;
+INSERT INTO `payment` VALUES (1,1,'Credit Card',1500.00),(2,2,'Paypal',500.00),(3,3,'Debit Card',100.00),(4,4,'Cash',70.00),(5,5,'Credit Card',40.00);
 /*!40000 ALTER TABLE `payment` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:09

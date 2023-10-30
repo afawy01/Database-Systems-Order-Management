@@ -31,7 +31,7 @@ CREATE TABLE `shipment` (
   UNIQUE KEY `shipmentID_UNIQUE` (`shipmentID`),
   KEY `shipOrdersID_idx` (`orderID`),
   CONSTRAINT `shipOrdersID` FOREIGN KEY (`orderID`) REFERENCES `orders` (`orderID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `shipment` (
 
 LOCK TABLES `shipment` WRITE;
 /*!40000 ALTER TABLE `shipment` DISABLE KEYS */;
+INSERT INTO `shipment` VALUES (1,1,'2023-01-02','Processing in NY'),(2,3,'2023-01-04','Delivering from Florida'),(3,5,'2023-01-06','Arrived in California');
 /*!40000 ALTER TABLE `shipment` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:33
+-- Dump completed on 2023-10-30 18:48:09

@@ -39,6 +39,7 @@ CREATE TABLE `customersaleschannel` (
 
 LOCK TABLES `customersaleschannel` WRITE;
 /*!40000 ALTER TABLE `customersaleschannel` DISABLE KEYS */;
+INSERT INTO `customersaleschannel` VALUES (1,1),(2,2),(3,3),(4,4),(5,5);
 /*!40000 ALTER TABLE `customersaleschannel` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:09

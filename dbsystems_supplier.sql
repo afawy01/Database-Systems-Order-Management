@@ -27,7 +27,7 @@ CREATE TABLE `supplier` (
   `supplierName` varchar(255) DEFAULT NULL,
   `contactInfo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`supplierID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,6 +36,7 @@ CREATE TABLE `supplier` (
 
 LOCK TABLES `supplier` WRITE;
 /*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
+INSERT INTO `supplier` VALUES (1,'Ron Steel','ronsteel@gmail.com'),(2,'Tense Wires','tensewire@gmail.com'),(3,'Juan Mix','juanmix@gmail.com'),(4,'Alpine ITW','alpineitw@gmail.com'),(5,'Superior Construction','superiorconstruction@gmail.com');
 /*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:09

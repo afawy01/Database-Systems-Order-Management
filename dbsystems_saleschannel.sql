@@ -26,7 +26,7 @@ CREATE TABLE `saleschannel` (
   `channelID` int NOT NULL AUTO_INCREMENT,
   `channelName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`channelID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,6 +35,7 @@ CREATE TABLE `saleschannel` (
 
 LOCK TABLES `saleschannel` WRITE;
 /*!40000 ALTER TABLE `saleschannel` DISABLE KEYS */;
+INSERT INTO `saleschannel` VALUES (1,'Online'),(2,'In-Store'),(3,'Phone'),(4,'Email'),(5,'Catalog');
 /*!40000 ALTER TABLE `saleschannel` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:33
+-- Dump completed on 2023-10-30 18:48:09

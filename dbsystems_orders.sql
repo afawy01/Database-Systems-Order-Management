@@ -35,7 +35,7 @@ CREATE TABLE `orders` (
   KEY `customerID_idx` (`customerID`),
   CONSTRAINT `ordersCustomerID` FOREIGN KEY (`customerID`) REFERENCES `customer` (`customerid`),
   CONSTRAINT `ordersEmployeeID` FOREIGN KEY (`employeeID`) REFERENCES `employee` (`employeeID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +44,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,1,1,'2023-01-01',1500.00,'Shipped'),(2,2,2,'2023-01-02',500.00,'Processing'),(3,3,3,'2023-01-03',100.00,'Shipped'),(4,4,4,'2023-01-04',70.00,'Cancelled'),(5,5,5,'2023-01-05',40.00,'Processing');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:10

@@ -32,7 +32,7 @@ CREATE TABLE `inventory` (
   KEY `supplierID_idx` (`supplierID`),
   CONSTRAINT `inventoryProductID` FOREIGN KEY (`productID`) REFERENCES `product` (`productID`),
   CONSTRAINT `inventorySupplierID` FOREIGN KEY (`supplierID`) REFERENCES `supplier` (`supplierID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,6 +41,7 @@ CREATE TABLE `inventory` (
 
 LOCK TABLES `inventory` WRITE;
 /*!40000 ALTER TABLE `inventory` DISABLE KEYS */;
+INSERT INTO `inventory` VALUES (1,1,1,100),(2,2,2,200),(3,3,3,50),(4,4,4,40),(5,5,5,60);
 /*!40000 ALTER TABLE `inventory` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-30 18:26:34
+-- Dump completed on 2023-10-30 18:48:10
